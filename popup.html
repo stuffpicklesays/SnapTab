@@ -1,0 +1,47 @@
+<style>
+    body {
+        margin: 0;
+        width: 250px;
+        background: #000000;
+        color: #4AF262;
+        font-family: -apple-system, sans-serif;
+    }
+    header {
+        padding: 10px 16px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #4AF262;
+        border-bottom: 1px solid #334155;
+        margin-bottom: 14px;
+    }
+    .content {
+        padding: 0 16px 16px 16px;
+        text-align: center;
+    }
+    #qrcode {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    #url {
+        font-size: 11px;
+        color: #4AF262;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<header>
+    <span>SnapTab</span>
+    <span id="settings-btn" style="cursor: pointer; float: right;">⚙️</span>
+</header>
+
+<div class="content">
+    <div id="qrcode"></div>
+    <div id="url"></div>
+</div>
+<script src="qrcode.min.js"></script>
+<script src="popup.js"></script>

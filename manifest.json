@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Tab to Phone QR",
+  "version": "0.1",
+  "description": "Instantly generate a QR code for your current tab to open on your phone. Privacy oriented - no data leaves your device",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
