@@ -10,6 +10,9 @@
         padding: 10px 16px;
         font-size: 16px;
         font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         color: #4AF262;
         border-bottom: 1px solid #334155;
         margin-bottom: 14px;
@@ -32,15 +35,46 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    #settings-btn {
+        background: none;
+        border: none;
+        color: #4AF262;
+        font-size: 21px;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    #settings-btn:hover {
+        color: #ffffff;
+        rotate: 15deg;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #334155;
+        margin: 10px 0;
+    }
+    input[type="checkbox"] {
+        accent-color: #4AF262;
+    }
 </style>
 
 <header>
     <span>SnapTab</span>
+    <button id="settings-btn" title="Settings">&#9881</button>
 </header>
 
 <div class="content">
     <div id="qrcode"></div>
     <div id="url"></div>
 </div>
+
+<div id="settings" style="display: none; padding: 0 16px 16px 16px;">
+        <h2 style="font-size:16px; font-weight: 600; color:#4AF262; margin-bottom: 10px;">Settings</h2>
+    <label for="strip-tracking" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+        <input type="checkbox" id="strip-tracking">
+        <span style="font-size:13px; color:#4AF262">Strip Tracking Parameters</span>
+    </label>
+</div>
+
 <script src="qrcode.min.js"></script>
 <script src="popup.js"></script>
