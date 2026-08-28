@@ -4,7 +4,8 @@
   "version": "0.1",
   "description": "Instantly generate a QR code for your current tab to open on your phone. Privacy oriented - no data leaves your device",
   "permissions": [
-    "activeTab"
+    "activeTab", 
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html"
