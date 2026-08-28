@@ -6,6 +6,7 @@
 
 > An offline, privacy-first browser extension that lets you resume reading your tabs on your phone by scanning a QR code
 
+Download the latest version of Snaptab [here](../../releases/latest).
 
 ---
 
